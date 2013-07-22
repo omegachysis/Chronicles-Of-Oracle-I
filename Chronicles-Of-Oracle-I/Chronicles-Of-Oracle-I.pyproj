@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>1c3c5b79-a90e-407b-b842-cf8c3892b3b4</ProjectGuid>
+    <ProjectHome>..\</ProjectHome>
+    <StartupFile>Banishment Blade.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <InterpreterId>2af0f10d-7135-4994-9156-5d01c9c11b7e</InterpreterId>
+    <InterpreterVersion>3.2</InterpreterVersion>
+    <Name>Chronicles-Of-Oracle-I</Name>
+    <RootNamespace>Chronicles-Of-Oracle-I</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments />
+    <InterpreterPath>C:\Python33\python.exe</InterpreterPath>
+    <InterpreterArguments />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Banishment Blade.py" />
+    <Compile Include="textImages.py" />
+    <Compile Include="BanishmentBlade\engine.py" />
+    <Compile Include="BanishmentBlade\printer.py" />
+    <Compile Include="BanishmentBlade\__init__.py" />
+    <Compile Include="BanishmentBlade\worlds\NovaShrine.py" />
+    <Compile Include="BanishmentBlade\worlds\__init__.py" />
+    <Compile Include="colorama\ansi.py" />
+    <Compile Include="colorama\ansitowin32.py" />
+    <Compile Include="colorama\initialise.py" />
+    <Compile Include="colorama\win32.py" />
+    <Compile Include="colorama\winterm.py" />
+    <Compile Include="colorama\__init__.py" />
+    <Content Include="saves\bb-game-Matthew.sav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BanishmentBlade" />
+    <Folder Include="BanishmentBlade\worlds" />
+    <Folder Include="colorama" />
+    <Folder Include="saves" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
